@@ -1,4 +1,4 @@
-def filter_by_state(list_of_dicts, state='EXECUTED'):
+def filter_by_state(list_of_dicts: list[dict[str, any]], state='EXECUTED'):
 
     """Фильтрование списка словарей по указанному состоянию.
 
@@ -24,7 +24,7 @@ filtered_list = filter_by_state(data)
 print(filtered_list)
 
 
-def sort_by_date(dict_list, reverse=True):
+def sort_by_date(dict_list: list[dict[str, any]], reverse=True):
 
     """Сортировка списка словарей по дате.
 
