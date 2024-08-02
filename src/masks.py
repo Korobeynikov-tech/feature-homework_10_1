@@ -33,7 +33,7 @@ print(get_mask_card_number(card_num))  # Вывод: 7000 79** **** 6361
 print(get_mask_account(account_num))   # Вывод: **4305
 
 
-def get_date(date_str):
+def get_date(date_str: str):
     """
     Преобразует строку с датой из формата "YYYY-MM-DDTHH:MM:SS.ssssss" в формат "ДД.ММ.ГГГГ".
     Args:
