@@ -1,4 +1,7 @@
-def filter_by_state(list_of_dicts, state='EXECUTED'):
+from typing import Any
+
+
+def filter_by_state(list_of_dicts: Any, state: str ='EXECUTED'):
 
     """Фильтрование списка словарей по указанному состоянию.
 
@@ -14,6 +17,7 @@ def filter_by_state(list_of_dicts, state='EXECUTED'):
 
     return [d for d in list_of_dicts if d.get('state') == state]
 
+
 # Пример использования
 data = [{'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
         {'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'},
@@ -24,7 +28,7 @@ filtered_list = filter_by_state(data)
 print(filtered_list)
 
 
-def sort_by_date(dict_list, reverse=True):
+def sort_by_date(dict_list: Any, reverse=True):
 
     """Сортировка списка словарей по дате.
 
@@ -36,6 +40,7 @@ def sort_by_date(dict_list, reverse=True):
     """
 
     return sorted(dict_list, key=lambda x: x.get("date"), reverse=reverse)
+
 
 # Пример использования
 data = [{'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
