@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-def get_date(date_str):
+def get_date(date_str: str):
     """
     Преобразует строку с датой из формата "YYYY-MM-DDTHH:MM:SS.ssssss" в формат "ДД.ММ.ГГГГ".
     Args:
