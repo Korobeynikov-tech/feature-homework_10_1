@@ -1,4 +1,7 @@
-def filter_by_state(list_of_dicts, state='EXECUTED'):
+from typing import Any
+
+
+def filter_by_state(list_of_dicts: Any, state: str ='EXECUTED'):
 
     """Фильтрование списка словарей по указанному состоянию.
 
@@ -24,7 +27,7 @@ filtered_list = filter_by_state(data)
 print(filtered_list)
 
 
-def sort_by_date(dict_list, reverse=True):
+def sort_by_date(dict_list: Any, reverse=True):
 
     """Сортировка списка словарей по дате.
 
@@ -35,7 +38,7 @@ def sort_by_date(dict_list, reverse=True):
             args: List[Dict[str, Any]] - Список словарей, отсортированных по дате
     """
 
-    return sorted(dict_list, key=lambda x: x.get("date"), reverse=reverse)
+    return sorted(dict_list, key = lambda x: x.get("date"), reverse=reverse)
 
 # Пример использования
 data = [{'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
