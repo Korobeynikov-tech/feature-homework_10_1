@@ -1,7 +1,4 @@
-from typing import Any
-
-
-def filter_by_state(list_of_dicts: Any, state: str ='EXECUTED'):
+def filter_by_state(list_of_dicts: list, state: str ='EXECUTED'):
 
     """Фильтрование списка словарей по указанному состоянию.
 
@@ -28,7 +25,7 @@ filtered_list = filter_by_state(data)
 print(filtered_list)
 
 
-def sort_by_date(dict_list: Any, reverse=True):
+def sort_by_date(dict_list: list, reverse=True):
 
     """Сортировка списка словарей по дате.
 
